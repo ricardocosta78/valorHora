@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Valor Hora</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calcular valor hora</h1>
+      <form action="/calculo" id="formulario">
+        <input
+          type="number"
+          name="vencimento"
+          id="vencimento"
+          step=".01"
+          placeholder="Digite o seu vencimento base?"
+        />
+        <input
+          type="number"
+          name="horas"
+          id="horas"
+          step=".01"
+          placeholder="Quantas horas semanais trabalha?"
+        />
+        
+      </form>
+      <div class="button">
+        <input type="button" id="button"value="Calcular"onclick="calcular()"></input>
+        <input type="button" id="button" value="Apagar" onclick="apagar()"></input>
+      </div>
+      <div class="resultado">
+        <input type="text" id="valor" name="valor"/>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
